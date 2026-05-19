@@ -1,0 +1,713 @@
+[
+  {
+    "question": "Hello / Hi",
+    "answer": "Hi there!👋 Welcome to the Campus Chatbot. How can I help you today?",
+    "department": "General",
+    "keywords": ["hello", "hi", "hey", "greet", "welcome"],
+    "chips": ["How do I apply for admission?", "Library Timings", "Reset my password", "Check Attendance"]
+  },
+
+  {
+    "question": "What courses are offered by the college?",
+    "answer": "The college offers undergraduate, postgraduate, and diploma programs across multiple disciplines. You can check the complete list on the official website.",
+    "department": "Admissions",
+    "keywords": ["courses", "programs", "UG", "PG", "diploma", "offered", "available"],
+    "chips": ["What is the eligibility for UG courses?", "What is the fee structure?", "How can I apply for admission?"]
+  },
+  {
+    "question": "What is the admission process?",
+    "answer": "Admissions are conducted online. You need to fill out the application form, upload the required documents, and submit it for verification.",
+    "department": "Admissions",
+    "keywords": ["admission", "process", "apply", "how to join", "application"],
+    "chips": ["What documents are required?", "Is there an entrance exam?", "What is the admission deadline?"]
+  },
+  {
+    "question": "What is the admission deadline?",
+    "answer": "Admission deadlines are announced on the official college website under the admissions section. Please check regularly for updates.",
+    "department": "Admissions",
+    "keywords": ["deadline", "last date", "admission date", "cutoff date"],
+    "chips": ["How can I apply for admission?", "What is the admission process?"]
+  },
+  {
+    "question": "How can I apply for admission?",
+    "answer": "You can apply through the college portal by filling out the application form and submitting it online. Go to ERP: Admissions and select New Application.",
+    "department": "Admissions",
+    "keywords": ["apply", "admission", "portal", "register", "enroll"],
+    "chips": ["What documents are required?", "Is there an application fee?", "What is the eligibility for UG courses?"]
+  },
+  {
+    "question": "Where is the admission form available?",
+    "answer": "The admission form is available on the official website under the admissions section.",
+    "department": "Admissions",
+    "keywords": ["admission form", "form", "application form", "where to find"],
+    "chips": ["What documents are required?", "Is there an application fee?"]
+  },
+  {
+    "question": "What documents are required for admission?",
+    "answer": "You need to submit mark sheets, ID proof, photographs, and other required documents during the application process.",
+    "department": "Admissions",
+    "keywords": ["documents", "marksheet", "ID proof", "photograph", "required documents"],
+    "chips": ["How can I apply for admission?", "Is there an application fee?"]
+  },
+  {
+    "question": "Is there an entrance exam?",
+    "answer": "Entrance exams are required for some programs depending on the eligibility criteria. Please check the admission notice for your specific program.",
+    "department": "Admissions",
+    "keywords": ["entrance exam", "exam", "test", "eligibility test"],
+    "chips": ["What is the eligibility for UG courses?", "What is the admission process?"]
+  },
+  {
+    "question": "What is the eligibility for UG courses?",
+    "answer": "Eligibility varies by course but generally requires completion of 10+2 with required subjects. Please check the specific course requirements on the official website.",
+    "department": "Admissions",
+    "keywords": ["eligibility", "UG", "undergraduate", "criteria", "qualification"],
+    "chips": ["How can I apply for admission?", "What courses are offered?"]
+  },
+  {
+    "question": "What is the eligibility for PG courses?",
+    "answer": "Applicants must have completed a relevant undergraduate degree to apply for postgraduate programs.",
+    "department": "Admissions",
+    "keywords": ["eligibility", "PG", "postgraduate", "masters", "criteria"],
+    "chips": ["How can I apply for admission?", "What is the fee structure?"]
+  },
+  {
+    "question": "How can I check admission status?",
+    "answer": "You can check your admission status by logging into the ERP student portal. Go to Dashboard and select Application Status.",
+    "department": "Admissions",
+    "keywords": ["admission status", "check status", "portal", "application status"],
+    "chips": ["How can I log in to the student portal?", "Whom should I contact for admission queries?"]
+  },
+  {
+    "question": "Is there an application fee?",
+    "answer": "Yes, an application fee is required while submitting the admission form. Fee details are available on the official website.",
+    "department": "Admissions",
+    "keywords": ["application fee", "fee", "charges", "payment", "form fee"],
+    "chips": ["What is the fee structure?", "Are scholarships available?"]
+  },
+  {
+    "question": "What is the fee structure?",
+    "answer": "The fee structure varies depending on the course. You can check detailed fee information on the website or portal. Go to ERP: Fees and select Fee Structure.",
+    "department": "Admissions",
+    "keywords": ["fee structure", "fees", "tuition fee", "charges", "cost"],
+    "chips": ["Are scholarships available?", "What is the refund policy?"]
+  },
+  {
+    "question": "Are scholarships available?",
+    "answer": "Yes, scholarships are available for eligible students based on merit or other criteria. You can apply through the student portal.",
+    "department": "Admissions",
+    "keywords": ["scholarship", "financial aid", "merit", "stipend", "fee waiver"],
+    "chips": ["How can I apply for scholarships?", "What is the fee structure?"]
+  },
+  {
+    "question": "How can I apply for scholarships?",
+    "answer": "You can apply through the student portal by filling out the scholarship form. Go to ERP: Scholarships and click Apply.",
+    "department": "Admissions",
+    "keywords": ["apply scholarship", "scholarship portal", "how to get scholarship"],
+    "chips": ["Are scholarships available?", "How can I log in to the student portal?"]
+  },
+  {
+    "question": "Is reservation applicable?",
+    "answer": "Yes, the college follows government reservation policies for admissions.",
+    "department": "Admissions",
+    "keywords": ["reservation", "quota", "SC", "ST", "OBC", "category"],
+    "chips": ["What is the eligibility for UG courses?", "How can I apply for admission?"]
+  },
+  {
+    "question": "Can I apply for more than one course?",
+    "answer": "Yes, you can apply for multiple courses, but you may need to fill separate application forms for each.",
+    "department": "Admissions",
+    "keywords": ["multiple courses", "more than one", "two programs", "second course"],
+    "chips": ["What courses are offered?", "What is the fee structure?"]
+  },
+  {
+    "question": "Is counseling conducted?",
+    "answer": "Yes, counseling is conducted for selected programs as part of the admission process. Go to ERP: Admissions and check Counseling Details.",
+    "department": "Admissions",
+    "keywords": ["counseling", "counselling", "seat allotment", "merit list"],
+    "chips": ["What is the admission process?", "How can I check admission status?"]
+  },
+  {
+    "question": "Are hostel facilities available?",
+    "answer": "Yes, hostel facilities are available subject to availability. You can apply after confirming your admission through ERP: Hostel section.",
+    "department": "Admissions",
+    "keywords": ["hostel", "accommodation", "residence", "boarding", "dorm"],
+    "chips": ["Whom should I contact for admission queries?", "What is the fee structure?"]
+  },
+  {
+    "question": "Is management quota admission available?",
+    "answer": "Management quota admissions depend on the institution's policies. Please contact the admission office for more details.",
+    "department": "Admissions",
+    "keywords": ["management quota", "direct admission", "NRI quota", "special quota"],
+    "chips": ["How can I apply for admission?", "Whom should I contact for admission queries?"]
+  },
+  {
+    "question": "Can admission be cancelled after confirmation?",
+    "answer": "Yes, admission can be cancelled as per the college's rules and refund policy. You can cancel through ERP: Admissions and select Cancel Application.",
+    "department": "Admissions",
+    "keywords": ["cancel admission", "withdrawal", "refund", "drop out"],
+    "chips": ["What is the refund policy?", "Whom should I contact for admission queries?"]
+  },
+  {
+    "question": "Are international students allowed?",
+    "answer": "Yes, international students can apply by following the specified admission guidelines available on the official website.",
+    "department": "Admissions",
+    "keywords": ["international", "foreign student", "NRI", "abroad", "overseas"],
+    "chips": ["What documents are required?", "How can I apply for admission?"]
+  },
+  {
+    "question": "What is the refund policy?",
+    "answer": "Refund policies are defined in the admission guidelines available on the official website. Please read them carefully before applying.",
+    "department": "Admissions",
+    "keywords": ["refund", "money back", "fee refund", "cancellation policy"],
+    "chips": ["Can admission be cancelled?", "Whom should I contact for admission queries?"]
+  },
+  {
+    "question": "How will admission updates be shared?",
+    "answer": "Updates are shared through email notifications and the student portal. Make sure your registered email is active.",
+    "department": "Admissions",
+    "keywords": ["updates", "notifications", "email", "portal", "announcements"],
+    "chips": ["How can I check admission status?", "How can I log in to the student portal?"]
+  },
+  {
+    "question": "Is offline admission possible?",
+    "answer": "Admissions are mostly conducted online. Offline options, if available, will be announced by the college on the official website.",
+    "department": "Admissions",
+    "keywords": ["offline", "in person", "walk-in", "physical form"],
+    "chips": ["How can I apply for admission?", "Whom should I contact for admission queries?"]
+  },
+  {
+    "question": "Whom should I contact for admission queries?",
+    "answer": "You can contact the admission office through the helpdesk or the contact details provided on the official website. Go to ERP: Helpdesk and raise a query.",
+    "department": "Admissions",
+    "keywords": ["contact", "admission office", "helpdesk", "query", "support"],
+    "chips": ["What is the admission process?", "How can I apply for admission?"]
+  },
+
+  {
+    "question": "Where is the academic calendar available?",
+    "answer": "The academic calendar is available on the official college website under the academics section.",
+    "department": "Academics",
+    "keywords": ["academic calendar", "schedule", "dates", "holidays", "semester dates"],
+    "chips": ["Where can I see the exam schedule?", "How can I check my timetable?"]
+  },
+  {
+    "question": "How can I check my timetable?",
+    "answer": "You can check your timetable by logging into the student portal. Go to ERP: Academics and select Timetable.",
+    "department": "Academics",
+    "keywords": ["timetable", "class schedule", "lecture timings", "portal"],
+    "chips": ["How can I log in to the student portal?", "Where is the academic calendar?"]
+  },
+  {
+    "question": "Where can I see the exam schedule?",
+    "answer": "Exam schedules are published by the academic office and can be accessed through the website or portal. Go to ERP: Academics and select Exam Schedule.",
+    "department": "Academics",
+    "keywords": ["exam schedule", "exam dates", "datesheet", "exam timetable"],
+    "chips": ["How can I download my admit card?", "What is the passing criteria?"]
+  },
+  {
+    "question": "How can I download my admit card?",
+    "answer": "Admit cards can be downloaded from the student portal before exams. Go to ERP: Examinations and select Admit Card.",
+    "department": "Academics",
+    "keywords": ["admit card", "hall ticket", "exam card", "download"],
+    "chips": ["Where can I see the exam schedule?", "How can I log in to the student portal?"]
+  },
+  {
+    "question": "What is the minimum attendance requirement?",
+    "answer": "Minimum attendance requirements are defined by the university and must be maintained to appear in exams. Please check your department guidelines.",
+    "department": "Academics",
+    "keywords": ["attendance", "minimum attendance", "75%", "shortage", "detain"],
+    "chips": ["What happens if attendance is low?", "How can I apply for leave?"]
+  },
+  {
+    "question": "What happens if attendance is low?",
+    "answer": "Low attendance may result in restrictions from appearing in exams or other academic penalties as per university rules.",
+    "department": "Academics",
+    "keywords": ["low attendance", "debarred", "detained", "attendance shortage"],
+    "chips": ["What is the minimum attendance requirement?", "How can I apply for leave?"]
+  },
+  {
+    "question": "How can I apply for leave?",
+    "answer": "Leave requests can be submitted through the portal or by informing the concerned faculty. Go to ERP: Academics and select Leave Application.",
+    "department": "Academics",
+    "keywords": ["leave", "apply leave", "absent", "leave application"],
+    "chips": ["What is the minimum attendance requirement?", "How can I contact my faculty advisor?"]
+  },
+  {
+    "question": "Where can I check internal marks?",
+    "answer": "Internal marks are updated regularly on the student portal. Go to ERP: Academics and select Internal Marks.",
+    "department": "Academics",
+    "keywords": ["internal marks", "marks", "grades", "sessional", "CIA"],
+    "chips": ["How are grades calculated?", "What is the passing criteria?"]
+  },
+  {
+    "question": "How are grades calculated?",
+    "answer": "Grades are calculated based on your performance in exams, assignments, and internal assessments as per university guidelines.",
+    "department": "Academics",
+    "keywords": ["grades", "CGPA", "GPA", "grading system", "marks calculation"],
+    "chips": ["Where can I check internal marks?", "What is the passing criteria?"]
+  },
+  {
+    "question": "What is the passing criteria?",
+    "answer": "Passing criteria are defined by the university and depend on minimum marks or grade requirements for each subject.",
+    "department": "Academics",
+    "keywords": ["passing marks", "pass criteria", "minimum marks", "fail", "pass"],
+    "chips": ["How are grades calculated?", "How can I reappear for exams?"]
+  },
+  {
+    "question": "How can I reappear for exams?",
+    "answer": "Re-exam applications are announced after results and must be submitted within the given time frame. Go to ERP: Examinations and select Reappear or Back Exam Form.",
+    "department": "Academics",
+    "keywords": ["reappear", "reexam", "back exam", "supplementary", "repeat exam"],
+    "chips": ["How can I apply for backlog exams?", "What is the passing criteria?"]
+  },
+  {
+    "question": "How do I register for subjects?",
+    "answer": "Subject registration is done through the student portal during the registration period. Go to ERP: Academics and select Course Registration.",
+    "department": "Academics",
+    "keywords": ["subject registration", "enroll subjects", "course registration", "electives"],
+    "chips": ["How can I change my elective subject?", "How can I log in to the student portal?"]
+  },
+  {
+    "question": "Where is the syllabus available?",
+    "answer": "The syllabus is available on the official website or department page for each course.",
+    "department": "Academics",
+    "keywords": ["syllabus", "curriculum", "course content", "topics", "units"],
+    "chips": ["Where is study material shared?", "How can I contact my faculty advisor?"]
+  },
+  {
+    "question": "How can I contact my faculty advisor?",
+    "answer": "Faculty advisor details are available on the student portal under your profile or academic section.",
+    "department": "Academics",
+    "keywords": ["faculty advisor", "mentor", "tutor", "contact faculty", "advisor"],
+    "chips": ["Is academic mentoring available?", "How can I apply for leave?"]
+  },
+  {
+    "question": "When are results declared?",
+    "answer": "Results are declared as per the academic calendar and are updated on the student portal. Go to ERP: Examinations and select Results.",
+    "department": "Academics",
+    "keywords": ["results", "result date", "marks", "semester result", "declared"],
+    "chips": ["What is the revaluation process?", "Where can I check internal marks?"]
+  },
+  {
+    "question": "What is the revaluation process?",
+    "answer": "Revaluation options are provided after results are declared, and details are shared by the academic office. Go to ERP: Examinations and select Revaluation.",
+    "department": "Academics",
+    "keywords": ["revaluation", "rechecking", "recounting", "recheck marks"],
+    "chips": ["When are results declared?", "How can I apply for backlog exams?"]
+  },
+  {
+    "question": "How can I apply for backlog exams?",
+    "answer": "Backlog exam forms are released by the exam cell and need to be submitted within the specified dates. Go to ERP: Examinations and select Backlog Form.",
+    "department": "Academics",
+    "keywords": ["backlog", "arrear", "KT", "back paper", "failed subject"],
+    "chips": ["How can I reappear for exams?", "What is the passing criteria?"]
+  },
+  {
+    "question": "What if I miss an exam?",
+    "answer": "Missing an exam is handled as per university rules, and you may be allowed to reappear based on valid reasons submitted to the academic office.",
+    "department": "Academics",
+    "keywords": ["missed exam", "absent exam", "medical", "emergency", "makeup exam"],
+    "chips": ["How can I apply for backlog exams?", "How can I contact my faculty advisor?"]
+  },
+  {
+    "question": "How can I apply for a bonafide certificate?",
+    "answer": "You can apply by submitting a request through the academic office or the student portal. Go to ERP: Academics, then Certificates and select Bonafide.",
+    "department": "Academics",
+    "keywords": ["bonafide", "certificate", "student certificate", "verification letter"],
+    "chips": ["How can I apply for a transcript?", "How can I get a no-due certificate?"]
+  },
+  {
+    "question": "How can I apply for a transcript?",
+    "answer": "Transcript requests can be made through the academic office or online portal. Go to ERP: Academics, then Certificates and select Transcript.",
+    "department": "Academics",
+    "keywords": ["transcript", "marksheet", "grade sheet", "academic record"],
+    "chips": ["How can I apply for a bonafide certificate?", "When are results declared?"]
+  },
+  {
+    "question": "Are online classes available?",
+    "answer": "Online classes are conducted when required and are communicated through official channels and the student portal.",
+    "department": "Academics",
+    "keywords": ["online classes", "virtual classes", "zoom", "remote learning", "LMS"],
+    "chips": ["Where is study material shared?", "How do I submit assignments?"]
+  },
+  {
+    "question": "Where is study material shared?",
+    "answer": "Study material is usually shared through the LMS or the student portal by faculty members.",
+    "department": "Academics",
+    "keywords": ["study material", "notes", "LMS", "resources", "PDF", "lecture notes"],
+    "chips": ["How do I submit assignments?", "Are online classes available?"]
+  },
+  {
+    "question": "How do I submit assignments?",
+    "answer": "Assignments are submitted through the LMS or as instructed by the faculty. Go to LMS: Assignments and click Submit.",
+    "department": "Academics",
+    "keywords": ["assignment", "submit", "LMS", "homework", "submission"],
+    "chips": ["Where is study material shared?", "How can I access online classes?"]
+  },
+  {
+    "question": "How can I change my elective subject?",
+    "answer": "Elective changes can be made during the course registration period through the portal. Go to ERP: Academics and select Course Registration.",
+    "department": "Academics",
+    "keywords": ["elective", "change subject", "optional subject", "elective change"],
+    "chips": ["How do I register for subjects?", "How can I contact my faculty advisor?"]
+  },
+  {
+    "question": "Is academic mentoring available?",
+    "answer": "Yes, academic mentoring is provided by faculty members to guide students throughout their course.",
+    "department": "Academics",
+    "keywords": ["mentoring", "guidance", "academic help", "counselor", "support"],
+    "chips": ["How can I contact my faculty advisor?", "Where is study material shared?"]
+  },
+
+  {
+    "question": "What are library timings?",
+    "answer": "The library is open from 8:00 AM to 6:00 PM during working hours.",
+    "department": "Library",
+    "keywords": ["library", "timings", "open", "hours", "library schedule"],
+    "chips": ["How can I register for the library?", "Is the library open during exams?"]
+  },
+  {
+    "question": "How can I register for the library?",
+    "answer": "Library registration is done using a valid student ID. Visit the library counter to complete registration.",
+    "department": "Library",
+    "keywords": ["library registration", "library card", "membership", "student ID"],
+    "chips": ["How many books can be issued?", "What are library timings?"]
+  },
+  {
+    "question": "How many books can be issued?",
+    "answer": "Books can be issued as per library rules. Please check ERP: Library and select Guidelines for the exact limit.",
+    "department": "Library",
+    "keywords": ["books", "issue limit", "borrow", "how many books", "library books"],
+    "chips": ["What is the issue duration for books?", "Is there a fine for late return?"]
+  },
+  {
+    "question": "What is the issue duration for books?",
+    "answer": "Books are issued for a duration ranging from 3 days to 1 month depending on the book type.",
+    "department": "Library",
+    "keywords": ["issue duration", "return date", "borrow period", "how long", "due date"],
+    "chips": ["Is there a fine for late return?", "How can I renew books?"]
+  },
+  {
+    "question": "Is there a fine for late return?",
+    "answer": "Yes, late returns attract fines as per library guidelines. Please check ERP: Library and select Guidelines for details.",
+    "department": "Library",
+    "keywords": ["fine", "late return", "penalty", "overdue", "charges"],
+    "chips": ["How can I renew books?", "What is the issue duration?"]
+  },
+  {
+    "question": "How can I renew books?",
+    "answer": "Books can be renewed at the library counter before the due date to avoid fines.",
+    "department": "Library",
+    "keywords": ["renew", "renewal", "extend", "book renewal", "return date extension"],
+    "chips": ["Is there a fine for late return?", "How many books can be issued?"]
+  },
+  {
+    "question": "Are reference books issued?",
+    "answer": "Reference books are for in-library use only and cannot be taken home.",
+    "department": "Library",
+    "keywords": ["reference books", "reference section", "cannot borrow", "in-library"],
+    "chips": ["Are e-books available?", "How can I check book availability?"]
+  },
+  {
+    "question": "Are e-books available?",
+    "answer": "Yes, e-books are available through the digital library. You can login using your student ID. Go to ERP: Library and select Digital Library.",
+    "department": "Library",
+    "keywords": ["ebook", "e-book", "digital book", "online book", "digital library"],
+    "chips": ["How can I access online journals?", "Is there a digital library?"]
+  },
+  {
+    "question": "How can I access online journals?",
+    "answer": "Journals are accessible using your student credentials on the digital library portal.",
+    "department": "Library",
+    "keywords": ["journals", "online journals", "research papers", "JSTOR", "access"],
+    "chips": ["Are e-books available?", "Is there a digital library?"]
+  },
+  {
+    "question": "Is there a digital library?",
+    "answer": "Yes, digital library access is provided. You can access it through ERP: Library and selecting Digital Library using your student credentials.",
+    "department": "Library",
+    "keywords": ["digital library", "online resources", "e-library", "virtual library"],
+    "chips": ["Are e-books available?", "How can I access online journals?"]
+  },
+  {
+    "question": "Can I reserve a book?",
+    "answer": "Book reservations depend on the availability of books. Please check at the library counter.",
+    "department": "Library",
+    "keywords": ["reserve book", "hold book", "book reservation", "waitlist"],
+    "chips": ["How can I check book availability?", "How many books can be issued?"]
+  },
+  {
+    "question": "How can I check book availability?",
+    "answer": "Book availability can be checked at the library desk or through the library catalog.",
+    "department": "Library",
+    "keywords": ["book availability", "available books", "check stock", "library catalog"],
+    "chips": ["Can I reserve a book?", "How can I register for the library?"]
+  },
+  {
+    "question": "Is photocopying allowed?",
+    "answer": "Photocopying is allowed as per library rules. Please check with library staff for details.",
+    "department": "Library",
+    "keywords": ["photocopy", "xerox", "copy", "printing", "scan"],
+    "chips": ["What are library timings?", "Whom should I contact for library issues?"]
+  },
+  {
+    "question": "Are newspapers available in the library?",
+    "answer": "Yes, newspapers are available for reading in the library.",
+    "department": "Library",
+    "keywords": ["newspaper", "magazines", "periodicals", "daily news", "reading"],
+    "chips": ["What are library timings?", "Are study rooms available?"]
+  },
+  {
+    "question": "Can alumni access the library?",
+    "answer": "Alumni access depends on college policy. Please contact the library staff for more information.",
+    "department": "Library",
+    "keywords": ["alumni", "ex-student", "alumni library", "past students"],
+    "chips": ["Whom should I contact for library issues?", "What are library timings?"]
+  },
+  {
+    "question": "Is the library open during exams?",
+    "answer": "Yes, library hours are extended during exams from 8:00 AM to 8:00 PM to support students.",
+    "department": "Library",
+    "keywords": ["exam time", "library during exams", "extended hours", "open late"],
+    "chips": ["What are library timings?", "Are study rooms available?"]
+  },
+  {
+    "question": "What if a library book is lost?",
+    "answer": "Lost books must be replaced or paid for. Please inform the library staff immediately if a book is lost.",
+    "department": "Library",
+    "keywords": ["lost book", "damaged book", "missing book", "replacement", "fine"],
+    "chips": ["Is there a fine for late return?", "Whom should I contact for library issues?"]
+  },
+  {
+    "question": "How can I get a no-due certificate?",
+    "answer": "No-due requests can be submitted to the library. Make sure all borrowed books are returned before applying.",
+    "department": "Library",
+    "keywords": ["no due", "clearance", "no objection", "library clearance", "certificate"],
+    "chips": ["How can I apply for a bonafide certificate?", "Whom should I contact for library issues?"]
+  },
+  {
+    "question": "Are study rooms available?",
+    "answer": "Yes, study rooms are available in the library subject to availability.",
+    "department": "Library",
+    "keywords": ["study room", "reading room", "quiet room", "group study", "discussion room"],
+    "chips": ["What are library timings?", "Is Wi-Fi available in the library?"]
+  },
+  {
+    "question": "Can I bring personal books?",
+    "answer": "Personal books may be allowed as per library rules. Please confirm with the library staff.",
+    "department": "Library",
+    "keywords": ["personal books", "own books", "bring books", "self books"],
+    "chips": ["Are reference books issued?", "What are library timings?"]
+  },
+  {
+    "question": "Is silence mandatory in the library?",
+    "answer": "Yes, students are expected to maintain silence in the library to ensure a good study environment.",
+    "department": "Library",
+    "keywords": ["silence", "quiet", "noise", "library rules", "talking"],
+    "chips": ["Are study rooms available?", "What are library timings?"]
+  },
+  {
+    "question": "Whom should I contact for library issues?",
+    "answer": "Library staff can assist with any issues. You can also contact the library at libraryquery@uni.com.",
+    "department": "Library",
+    "keywords": ["contact", "library staff", "librarian", "help", "support"],
+    "chips": ["What are library timings?", "How can I get a no-due certificate?"]
+  },
+  {
+    "question": "Are library rules available online?",
+    "answer": "Yes, library rules are available online. Go to ERP: Library and select Guidelines.",
+    "department": "Library",
+    "keywords": ["library rules", "guidelines", "policy", "rules online"],
+    "chips": ["What are library timings?", "Whom should I contact for library issues?"]
+  },
+  {
+    "question": "Can students suggest new books?",
+    "answer": "Yes, students can suggest new books for purchase by sending an email to libraryquery@uni.com.",
+    "department": "Library",
+    "keywords": ["suggest books", "new books", "book request", "purchase request"],
+    "chips": ["Whom should I contact for library issues?", "How can I check book availability?"]
+  },
+  {
+    "question": "Is Wi-Fi available in the library?",
+    "answer": "Yes, Wi-Fi access is available inside the library for students.",
+    "department": "Library",
+    "keywords": ["wifi", "wi-fi", "internet", "library internet", "wireless"],
+    "chips": ["What are library timings?", "Are study rooms available?"]
+  },
+
+  {
+    "question": "How can I log in to the student portal?",
+    "answer": "You can log in to the student portal using your registered User ID and password. For first-time login, use the credentials provided by the college. Use the Forgot Password option if needed.",
+    "department": "IT Support",
+    "keywords": ["login", "portal", "student ID", "password", "sign in", "log in"],
+    "chips": ["What if I forget my password?", "Which browsers are supported?"]
+  },
+  {
+    "question": "What if I forget my password?",
+    "answer": "You can reset your password using the Forgot Password option on the login page. Enter your registered email or User ID and follow the instructions sent to your email.",
+    "department": "IT Support",
+    "keywords": ["forgot password", "reset password", "password recovery", "lost password"],
+    "chips": ["How can I reset my portal password?", "Whom should I contact for login issues?"]
+  },
+  {
+    "question": "How can I reset my portal password?",
+    "answer": "Go to the login page and click Forgot Password. Enter your registered email or User ID and follow the instructions to create a new password.",
+    "department": "IT Support",
+    "keywords": ["reset password", "password change", "new password", "portal reset"],
+    "chips": ["What if I forget my password?", "Whom should I contact for login issues?"]
+  },
+  {
+    "question": "Whom should I contact for login issues?",
+    "answer": "For login-related issues, contact the IT helpdesk through the support section or use the contact details provided on the official website.",
+    "department": "IT Support",
+    "keywords": ["login issue", "can't login", "access problem", "IT helpdesk", "portal error"],
+    "chips": ["What is the IT helpdesk email?", "How can I raise a technical complaint?"]
+  },
+  {
+    "question": "How can I access online classes?",
+    "answer": "Online classes can be accessed through the LMS using your student login credentials. Go to LMS, select My Courses, and click Join Class.",
+    "department": "IT Support",
+    "keywords": ["online classes", "LMS", "virtual classroom", "zoom link", "join class"],
+    "chips": ["Video lectures are not working", "How do I submit assignments?"]
+  },
+  {
+    "question": "Video lectures are not working. What should I do?",
+    "answer": "Check your internet connection and try refreshing the page or switching the browser. If the issue continues, contact IT support.",
+    "department": "IT Support",
+    "keywords": ["video not working", "lecture error", "streaming issue", "LMS video", "buffering"],
+    "chips": ["What if Wi-Fi is not working?", "How can I raise a technical complaint?"]
+  },
+  {
+    "question": "How can I access college email?",
+    "answer": "College email access is provided to students after admission. Log in using the credentials shared by the institution.",
+    "department": "IT Support",
+    "keywords": ["college email", "student email", "institutional email", "mail access"],
+    "chips": ["My email is not working", "Whom should I contact for login issues?"]
+  },
+  {
+    "question": "My email is not working. What should I do?",
+    "answer": "Try resetting your password first. If the issue continues, contact the IT helpdesk for assistance.",
+    "department": "IT Support",
+    "keywords": ["email not working", "email issue", "mail problem", "inbox error"],
+    "chips": ["What is the IT helpdesk email?", "How can I raise a technical complaint?"]
+  },
+  {
+    "question": "How can I connect to campus Wi-Fi?",
+    "answer": "Connect to the campus Wi-Fi network and use the login credentials provided by the IT team. Follow the network login instructions after connecting.",
+    "department": "IT Support",
+    "keywords": ["campus wifi", "connect wifi", "wifi password", "wireless network"],
+    "chips": ["What if Wi-Fi is not working?", "Whom should I contact for login issues?"]
+  },
+  {
+    "question": "What if Wi-Fi is not working?",
+    "answer": "Check your device settings or reconnect to the network. If the issue persists, report it to IT support.",
+    "department": "IT Support",
+    "keywords": ["wifi not working", "no internet", "wifi problem", "network issue"],
+    "chips": ["How can I connect to campus Wi-Fi?", "How can I raise a technical complaint?"]
+  },
+  {
+    "question": "Is IT support available after hours?",
+    "answer": "IT support availability depends on the college schedule. Please check the official website for helpdesk timings.",
+    "department": "IT Support",
+    "keywords": ["IT hours", "support timing", "after hours", "24x7 support", "helpdesk timing"],
+    "chips": ["What is the IT helpdesk email?", "Whom should I contact for urgent IT issues?"]
+  },
+  {
+    "question": "How can I update my profile details?",
+    "answer": "Profile details can be updated through the student portal. Go to ERP: Profile, select Edit Details, and save changes.",
+    "department": "IT Support",
+    "keywords": ["update profile", "edit details", "change name", "personal info", "portal update"],
+    "chips": ["How can I log in to the student portal?", "Whom should I contact for login issues?"]
+  },
+  {
+    "question": "Can I access the portal on my mobile phone?",
+    "answer": "Yes, the student portal is mobile-friendly and can be accessed through any browser on your phone.",
+    "department": "IT Support",
+    "keywords": ["mobile", "phone", "app", "mobile portal", "smartphone access"],
+    "chips": ["How can I log in to the student portal?", "Which browsers are supported?"]
+  },
+  {
+    "question": "Which browsers are supported?",
+    "answer": "The portal supports modern browsers like Chrome, Edge, and Firefox for the best experience.",
+    "department": "IT Support",
+    "keywords": ["browser", "chrome", "firefox", "supported browser", "compatibility"],
+    "chips": ["Can I access the portal on my mobile?", "How can I log in to the student portal?"]
+  },
+  {
+    "question": "How can I upload documents on the portal?",
+    "answer": "You can upload documents by selecting the required section and attaching files during submission. Go to ERP: Upload Section, choose the file, and submit.",
+    "department": "IT Support",
+    "keywords": ["upload", "documents", "file upload", "attach", "portal upload"],
+    "chips": ["How can I log in to the student portal?", "Whom should I contact for login issues?"]
+  },
+  {
+    "question": "How can I submit assignments online?",
+    "answer": "Assignments can be submitted through the LMS by uploading your files before the deadline. Go to LMS: Assignments, upload your file, and click Submit.",
+    "department": "IT Support",
+    "keywords": ["submit assignment", "online submission", "LMS upload", "assignment portal"],
+    "chips": ["How can I access online classes?", "Where is study material shared?"]
+  },
+  {
+    "question": "What if the website is down?",
+    "answer": "If the website is temporarily unavailable, wait for some time and try again later. The IT team usually resolves such issues quickly.",
+    "department": "IT Support",
+    "keywords": ["website down", "portal down", "not accessible", "maintenance", "server error"],
+    "chips": ["How can I raise a technical complaint?", "Whom should I contact for urgent IT issues?"]
+  },
+  {
+    "question": "How can I raise a technical complaint?",
+    "answer": "You can raise a complaint by submitting a request through the helpdesk portal. Go to ERP: Helpdesk and select Raise Complaint.",
+    "department": "IT Support",
+    "keywords": ["complaint", "ticket", "raise issue", "report problem", "helpdesk"],
+    "chips": ["What is the IT helpdesk email?", "How much time does issue resolution take?"]
+  },
+  {
+    "question": "What is the IT helpdesk email?",
+    "answer": "The IT helpdesk email address is available on the official website under the contact section.",
+    "department": "IT Support",
+    "keywords": ["IT email", "helpdesk email", "contact IT", "support email"],
+    "chips": ["How can I raise a technical complaint?", "Is IT support available after hours?"]
+  },
+  {
+    "question": "How much time does issue resolution take?",
+    "answer": "Resolution time depends on the type and priority of the issue. Critical issues are usually resolved faster.",
+    "department": "IT Support",
+    "keywords": ["resolution time", "how long", "TAT", "issue time", "fix time"],
+    "chips": ["How can I raise a technical complaint?", "Whom should I contact for urgent IT issues?"]
+  },
+  {
+    "question": "Can parents access the student portal?",
+    "answer": "Parent access to the portal depends on college policy. Separate login access may be provided in some cases.",
+    "department": "IT Support",
+    "keywords": ["parent portal", "parent access", "guardian login", "family access"],
+    "chips": ["How can I log in to the student portal?", "Whom should I contact for login issues?"]
+  },
+  {
+    "question": "Are online payments secure?",
+    "answer": "Yes, online payments are processed through secure payment gateways to ensure safe transactions.",
+    "department": "IT Support",
+    "keywords": ["payment", "secure payment", "online fee", "transaction", "safe"],
+    "chips": ["How can I download payment receipts?", "What if online payment fails?"]
+  },
+  {
+    "question": "How can I download payment receipts?",
+    "answer": "You can download payment receipts from the portal after completing the transaction. Go to ERP: Fees, select Payment History, and click Download Receipt.",
+    "department": "IT Support",
+    "keywords": ["receipt", "payment receipt", "download receipt", "fee receipt", "transaction proof"],
+    "chips": ["Are online payments secure?", "What if online payment fails?"]
+  },
+  {
+    "question": "What if online payment fails?",
+    "answer": "If a payment fails, the amount is usually refunded automatically within a few days. If not, contact the accounts or IT support team.",
+    "department": "IT Support",
+    "keywords": ["payment failed", "transaction failed", "payment error", "money deducted", "refund"],
+    "chips": ["How can I download payment receipts?", "How can I raise a technical complaint?"]
+  },
+  {
+    "question": "Whom should I contact for urgent IT issues?",
+    "answer": "For urgent IT issues, contact the IT helpdesk immediately through phone or the helpdesk portal. Go to ERP: Helpdesk and select Urgent Support.",
+    "department": "IT Support",
+    "keywords": ["urgent", "emergency IT", "critical issue", "immediate help", "IT emergency"],
+    "chips": ["What is the IT helpdesk email?", "How can I raise a technical complaint?"]
+  }
+]
