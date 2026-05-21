@@ -4,7 +4,6 @@ import ChatLog from "../models/ChatLog.js";
 const router = express.Router();
 
 // ── Save chat message ─────────────────────────────────
-// POST /api/feedback/log
 router.post("/log", async (req, res) => {
   try {
     const { sessionId, userMsg, botReply, lang, department } = req.body;
@@ -16,7 +15,6 @@ router.post("/log", async (req, res) => {
 });
 
 // ── Save feedback on a message ────────────────────────
-// PATCH /api/feedback/:id
 router.patch("/:id", async (req, res) => {
   try {
     const { feedback, comment } = req.body;
@@ -28,7 +26,6 @@ router.patch("/:id", async (req, res) => {
 });
 
 // ── Get all logs for admin panel ──────────────────────
-// GET /api/feedback/all
 router.get("/all", async (req, res) => {
   try {
     const logs = await ChatLog.find().sort({ timestamp: -1 }).limit(500);
@@ -38,28 +35,34 @@ router.get("/all", async (req, res) => {
   }
 });
 
-// ── Download CSV ──────────────────────────────────────
-// GET /api/feedback/csv
+// ── Download CSV — UTF-8 BOM for Excel Hindi support ──
 router.get("/csv", async (req, res) => {
   try {
     const logs = await ChatLog.find().sort({ timestamp: -1 });
-    const header = "Session,User Message,Bot Reply,Department,Language,Feedback,Comment,Time\n";
-    const rows = logs.map(l =>
-      [
-        l.sessionId,
-        `"${l.userMsg.replace(/"/g,'""')}"`,
-        `"${l.botReply.replace(/"/g,'""')}"`,
-        l.department,
-        l.lang,
-        l.feedback || "",
-        `"${(l.comment||"").replace(/"/g,'""')}"`,
-        new Date(l.timestamp).toLocaleString(),
-      ].join(",")
-    ).join("\n");
 
-    res.setHeader("Content-Type", "text/csv");
-    res.setHeader("Content-Disposition", "attachment; filename=chat_history.csv");
-    res.send(header + rows);
+    const header = "Session ID,User Message,Bot Reply,Department,Language,Feedback,Comment,Time\n";
+
+    const rows = logs.map(l => {
+      const escape = (val) => `"${String(val || "").replace(/"/g, '""')}"`;
+      return [
+        escape(l.sessionId),
+        escape(l.userMsg),
+        escape(l.botReply),
+        escape(l.department || "General"),
+        escape(l.lang === "hi" ? "Hindi" : "English"),
+        escape(l.feedback || ""),
+        escape(l.comment || ""),
+        escape(new Date(l.timestamp).toLocaleString("en-IN")),
+      ].join(",");
+    }).join("\n");
+
+    // UTF-8 BOM (\uFEFF) — Excel ko Hindi/Unicode sahi dikhane ke liye zaroori
+    const BOM = "\uFEFF";
+    const csv = BOM + header + rows;
+
+    res.setHeader("Content-Type", "text/csv; charset=utf-8");
+    res.setHeader("Content-Disposition", "attachment; filename=campusbot_chat_history.csv");
+    res.send(csv);
   } catch (err) {
     res.status(500).send("Error generating CSV");
   }

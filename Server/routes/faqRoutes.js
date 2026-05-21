@@ -84,13 +84,13 @@ router.get("/search", async (req, res) => {
 
     if (!best || best.score === 0) {
       const noMatch = lang === "hi"
-        ? "Mujhe is baare mein pakka pata nahi. Kripya helpdesk@bits-pilani.ac.in par sampark karein 😊"
+        ? "मुझे इस बारे में पक्का पता नहीं है। कृपया helpdesk@bits-pilani.ac.in पर संपर्क करें 😊"
         : "I'm not sure about that yet. Please contact helpdesk@bits-pilani.ac.in 😊";
 
       return res.json({
         answer: noMatch,
         chips:  lang === "hi"
-          ? ["Library timings", "Admission kaise karein?", "Password reset karna hai"]
+          ? ["पुस्तकालय का समय", "प्रवेश प्रक्रिया क्या है?", "पासवर्ड रीसेट कैसे करें?"]
           : ["Library timings", "Admission process", "Reset my password"],
       });
     }
