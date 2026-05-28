@@ -35,67 +35,84 @@ A bilingual campus support chatbot built with a React frontend and a Node/Expres
 - User fallback query submission for unanswered requests
 - Text-to-speech support using a server-side TTS proxy
 
-## Requirements
+## Login Flow
 
-- Node.js 18+ / npm
-- MongoDB running locally or reachable by the backend
+1. Navigate to `http://localhost:3000`.
+2. Sign up with name, email, and password or log in with existing credentials.
+3. The frontend sends credentials to `POST /api/auth/login`.
+4. On success, the backend returns a JWT token.
+5. The React app stores the token in `localStorage` and shows the authenticated chat interface.
+6. Authenticated requests include `Authorization: Bearer <token>` for protected routes.
 
-## Installation
+## Embedding Models
 
-Install dependencies separately for the frontend and backend.
+This project does not currently use embedding models or vector search. FAQ matching is powered by keyword matching plus translation fallback for Hindi queries, keeping the app lightweight and easy to run locally.
 
-```bash
-cd /workspaces/campus-chatbot/Server
-npm install
+## Database
 
-cd /workspaces/campus-chatbot/client
-npm install
-```
+The backend uses MongoDB with the following main collections:
 
-## Running the Project
+- `users` - stores user accounts, hashed passwords, roles, and profile metadata
+- `faqs` - stores FAQ questions and answers seeded from `Server/faqs.json`
+- `chatlogs` - stores chat history, bot replies, and user feedback
+- `fallbackqueries` - stores unresolved user queries and admin responses
 
-### Start MongoDB
-
-Start your MongoDB daemon locally. The backend expects:
+Default connection:
 
 - `mongodb://127.0.0.1:27017/campusbot`
 
-### Start the backend
+## Troubleshooting
 
-```bash
-cd /workspaces/campus-chatbot/Server
-npm start
-```
+### User Troubleshooting
 
-This runs the Express server on:
+- Login fails: verify email/password and ensure the backend is running.
+- Blank page or UI errors: open browser console and check network requests to `http://localhost:5000`.
+- FAQs not loading: make sure MongoDB is running and the seed data has been loaded.
+- Fallback query submission fails: check that the token is present in `localStorage` and the backend is accepting POST requests.
 
-- `http://localhost:5000`
+### Administrator Troubleshooting
 
-### Start the frontend
+- Admin portal access denied: confirm the user role is `admin` in the database or via `/api/auth/users`.
+- Cannot reply to fallback queries: ensure the auth token is valid and the request reaches `PATCH /api/fallback/:id/reply`.
+- Export CSV issues: confirm the backend is running and the admin user is authenticated.
+- User management errors: check server logs for JWT errors and MongoDB connection issues.
 
-```bash
-cd /workspaces/campus-chatbot/client
-npm start
-```
+## Performance Optimization
 
-This runs the React app on:
+- Run the backend and frontend locally on the same machine to reduce latency.
+- Use a production build for frontend deployment: `npm run build` in `client/`.
+- Keep the FAQ dataset concise to maintain quick search response times.
+- For server speed, use a local MongoDB instance rather than a remote database.
 
-- `http://localhost:3000`
+## Development Notes
 
-## Seed FAQ Data
+- The server currently uses hard-coded default values in `Server/index.js` and `Server/routes/authRoutes.js`.
+- Recommended improvement: add `.env` configuration for MongoDB URI and JWT secret.
+- The frontend stores auth state in `localStorage` keys like `campusbot_token`, `campusbot_user`, and `campusbot_sessions`.
+- Admin-only routes are protected by JWT checks and role verification.
+- The app uses a proxy TTS endpoint at `GET /api/tts?text=...&lang=hi|en`.
 
-Load the FAQ dataset into MongoDB once before using the app.
+## Dependencies Breakdown
 
-```bash
-cd /workspaces/campus-chatbot/Server
-node seed.js
-```
+### Backend
 
-Alternatively, the backend exposes a seed endpoint:
+- `bcryptjs` `^3.0.3` - secure password hashing for user accounts.
+- `cors` `^2.8.6` - enables cross-origin requests from the React frontend.
+- `express` `^5.2.1` - HTTP server framework for REST APIs.
+- `jsonwebtoken` `^9.0.3` - JWT token generation and verification.
+- `mongoose` `^9.5.0` - MongoDB object modeling and schema validation.
+- `nodemon` `^3.1.14` (dev) - automatic server reload during development.
 
-```http
-GET http://localhost:5000/api/faqs/seed
-```
+### Frontend
+
+- `react` `^19.2.6` - UI library for building the chat interface.
+- `react-dom` `^19.2.6` - React rendering for browser DOM.
+- `react-scripts` `5.0.1` - build tooling and development server for Create React App.
+- `web-vitals` `^2.1.4` - performance monitoring utilities.
+- `@testing-library/dom` `^10.4.1` - DOM testing utilities.
+- `@testing-library/jest-dom` `^6.9.1` - Jest matchers for DOM assertions.
+- `@testing-library/react` `^16.3.2` - React component testing utilities.
+- `@testing-library/user-event` `^13.5.0` - user interaction simulation for tests.
 
 ## Environment / Configuration Notes
 
@@ -194,3 +211,11 @@ cd /workspaces/campus-chatbot/client
 npm install
 npm start
 ```
+
+## License
+
+This project is developed for BITS Pilani students.
+
+## Support & Feedback
+
+For feedback or issues, open a GitHub issue in this repository or contact the project maintainer. Ensure the backend is running and tokens are valid before reporting login or admin access problems.
